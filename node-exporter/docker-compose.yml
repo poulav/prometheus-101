@@ -37,6 +37,7 @@ services:
     volumes:
       - ./grafana:/var/lib/grafana
     restart: unless-stopped
+    user: 0
   node-exporter:
     image: prom/node-exporter:latest
     container_name: node-exporter
